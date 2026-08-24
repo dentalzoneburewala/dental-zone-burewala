@@ -30,6 +30,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling effect ke liye */
         }
 
         /* Header */
@@ -1113,7 +1114,8 @@
         </div>
 
         <div class="services-grid">
-            <div class="service-card">
+            <!-- Har card ko apna unique id de diya gaya hai -->
+            <div class="service-card" id="checkup-card">
                 <div class="img-box">
                     <img src="routine-checkup.jpg" alt="Routine Check-Up">
                 </div>
@@ -1123,7 +1125,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="implants-card">
                 <div class="img-box">
                     <img src="dental-implants.jpg" alt="Dental Implants">
                 </div>
@@ -1133,7 +1135,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="whitening-card">
                 <div class="img-box">
                     <img src="teeth-whitening.jpg" alt="Laser Teeth Whitening">
                 </div>
@@ -1143,7 +1145,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="crowns-card">
                 <div class="img-box">
                     <img src="crowns-fillings.jpg" alt="Dental Crowns & Fillings">
                 </div>
@@ -1153,7 +1155,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="braces-card">
                 <div class="img-box">
                     <img src="braces.jpg" alt="Orthodontics & Braces">
                 </div>
@@ -1163,7 +1165,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="rct-card">
                 <div class="img-box">
                     <img src="rct.jpg" alt="Root Canal Treatment">
                 </div>
@@ -1173,7 +1175,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="scaling-card">
                 <div class="img-box">
                     <img src="scaling-polishing.jpg" alt="Scaling & Polishing">
                 </div>
@@ -1183,7 +1185,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="extraction-card">
                 <div class="img-box">
                     <img src="extraction.jpg" alt="Simple & Surgical Extraction">
                 </div>
@@ -1193,7 +1195,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="dentures-card">
                 <div class="img-box">
                     <img src="removable-denture.jpg" alt="Removable Dentures">
                 </div>
@@ -1203,7 +1205,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" id="pediatric-card">
                 <div class="img-box">
                     <img src="pediatric-dentistry.jpg" alt="Pediatric Dentistry">
                 </div>
@@ -1477,13 +1479,14 @@
             <div class="footer-col">
                 <h3 class="footer-block-title">Our Services</h3>
                 <ul class="footer-links-list">
-                    <li><a href="#services">Dental Implants</a></li>
-                    <li><a href="#services">Teeth Whitening</a></li>
-                    <li><a href="#services">Root Canal Treatment</a></li>
-                    <li><a href="#services">Orthodontics & Braces</a></li>
-                    <li><a href="#services">Tooth Extractions</a></li>
-                    <li><a href="#services">Pediatric (Kids) Dentistry</a></li>
-                    <li><a href="#services">Scaling & Polishing</a></li>
+                    <!-- Footer ke links ko ab direct unke cards se connect kar diya hai -->
+                    <li><a href="#implants-card">Dental Implants</a></li>
+                    <li><a href="#whitening-card">Teeth Whitening</a></li>
+                    <li><a href="#rct-card">Root Canal Treatment</a></li>
+                    <li><a href="#braces-card">Orthodontics & Braces</a></li>
+                    <li><a href="#extraction-card">Tooth Extractions</a></li>
+                    <li><a href="#pediatric-card">Pediatric (Kids) Dentistry</a></li>
+                    <li><a href="#scaling-card">Scaling & Polishing</a></li>
                 </ul>
             </div>
         </div>
